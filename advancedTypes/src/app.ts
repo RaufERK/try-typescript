@@ -152,3 +152,40 @@ function movePro(anml: Bird | Horse) {
 
 movePro(bird);
 movePro(horse);
+
+const myDiv = document.querySelector('div');
+if (myDiv) {
+  const div = myDiv as HTMLDivElement;
+  div.innerText = 'L ALALALA';
+  (myDiv as HTMLDivElement).innerText = 'kjsnjsncksdnksdjcn we1303813';
+}
+
+console.log(myDiv);
+
+interface ErrorContainer {
+  [prop: string]: string;
+}
+
+const errorBox: ErrorContainer = {
+  'e-mail': 'Email must be!!!',
+  name: 'MUst be started by a Big Charakter!!!',
+};
+errorBox.someValue = ' SomeValue!!!';
+
+console.log(errorBox);
+
+console.clear();
+
+type NumString = number | string;
+
+function add(p1: string, p2: string): string;
+function add(p1: number, p2: number): number;
+function add(p1: any, p2: any): any {
+  if (typeof p1 === 'number' && typeof p1 === 'number') {
+    return p1 + p2;
+  }
+  return `${p1}  \\\pppp/// ${p2}`;
+}
+
+console.log(add(' LA ', ' LA lA'));
+console.log(add(33, 33));
